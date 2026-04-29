@@ -1,0 +1,39 @@
+:root {
+  /* Colors from design.md */
+  --surface: #20092b;
+  --surface-container-low: #291234;
+  --surface-container-high: #382043;
+  --on-surface: #f7d8ff;
+  --on-surface-variant: #d6c0d0;
+  --outline: #9f8b9a;
+  --primary: #ffaaf7;
+  --secondary: #e9b3ff;
+  --tertiary: #a8c8ff;
+
+  /* Typography from design.md */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Rounded corners */
+  --rounded-md: 0.75rem;
+  --rounded-lg: 1rem;
+
+  /* Spacing */
+  --gutter: 16px;
+
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--on-surface);
+  background-color: var(--surface);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+}

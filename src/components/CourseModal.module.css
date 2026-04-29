@@ -1,0 +1,173 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.modalContent {
+  background-color: color-mix(in srgb, var(--surface-container) 85%, transparent);
+  border: 1px solid var(--surface-container-high);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: var(--rounded-lg);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  padding: 8px;
+  line-height: 1;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--on-surface);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0 24px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.meta > *:not(:first-child)::before {
+  content: '|';
+  margin-right: 12px;
+  color: var(--outline);
+}
+
+.xp {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.hours {
+  margin: 0;
+  color: var(--on-surface-variant);
+}
+
+.description {
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.linkButton,
+.completeButton {
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: var(--rounded-md);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.linkButton {
+  background-color: transparent;
+  border: 1px solid var(--outline);
+  color: var(--on-surface-variant);
+}
+
+.linkButton:hover {
+  background-color: var(--surface-container-high);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.completeButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 180px;
+}
+
+.completeButton {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border: none;
+  color: var(--surface);
+  user-select: none; /* Prevent text selection while holding */
+}
+
+.tierTag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tierBeginner {
+  --tier-color: #34d399; /* A nice green */
+  color: var(--tier-color);
+  background-color: color-mix(in srgb, var(--tier-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tier-color) 30%, transparent);
+}
+
+.tierIntermediate {
+  --tier-color: #facc15; /* A nice yellow */
+  color: var(--tier-color);
+  background-color: color-mix(in srgb, var(--tier-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tier-color) 30%, transparent);
+}
+
+.tierExpert {
+  --tier-color: #f87171; /* A nice red */
+  color: var(--tier-color);
+  background-color: color-mix(in srgb, var(--tier-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tier-color) 30%, transparent);
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    padding: 24px;
+    width: 95%;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,66 @@
+.tile {
+  /* Glassmorphism: Tonal Layering & Backdrop Blur */
+  background-color: color-mix(in srgb, var(--surface-container-low) 60%, transparent);
+  border: 1px solid var(--surface-container-high);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  /* Glassmorphism: Inner Glow */
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.08);
+
+  border-radius: var(--rounded-lg);
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+
+  /* Glassmorphism: Subtle Outer Shadow from design doc */
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--primary) 10%, transparent),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.xp {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary);
+  margin: 8px 0 0;
+}
+
+.completed {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.completed:hover {
+  border-color: var(--surface-container-high);
+  transform: none;
+  box-shadow: none;
+}
+
+.checkmark {
+  color: var(--tertiary);
+  font-size: 24px;
+  font-weight: bold;
+}

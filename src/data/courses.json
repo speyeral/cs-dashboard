@@ -1,0 +1,83 @@
+[
+  {
+    "id": "web-101",
+    "title": "HTML & CSS Fundamentals",
+    "description": "Learn the building blocks of the web. This course covers semantic HTML5 and modern CSS layouts like Flexbox and Grid.",
+    "link": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+    "xp": 100,
+    "category": "Web & Mobile Development",
+    "tier": 1,
+    "hours": 5
+  },
+  {
+    "id": "web-102",
+    "title": "JavaScript for Beginners",
+    "description": "An introduction to the JavaScript language, covering variables, data types, functions, and the DOM.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "xp": 150,
+    "category": "Web & Mobile Development",
+    "tier": 1,
+    "hours": 8
+  },
+  {
+    "id": "ai-101",
+    "title": "Introduction to Machine Learning",
+    "description": "Explore the fundamental concepts of machine learning and build your first models.",
+    "link": "https://www.coursera.org/learn/machine-learning",
+    "xp": 200,
+    "category": "Intelligence & Data",
+    "tier": 2,
+    "hours": 12
+  },
+  {
+    "id": "sys-101",
+    "title": "Operating Systems Concepts",
+    "description": "Understand the core concepts of operating systems, from processes to memory management.",
+    "link": "https://www.udacity.com/course/introduction-to-operating-systems--ud923",
+    "xp": 250,
+    "category": "Systems & Infrastructure",
+    "tier": 2,
+    "hours": 15
+  },
+  {
+    "id": "sec-101",
+    "title": "Cybersecurity Fundamentals",
+    "description": "An introduction to the world of cybersecurity, covering common threats and defense mechanisms.",
+    "link": "https://www.cybrary.it/course/introduction-to-it-and-cybersecurity/",
+    "xp": 150,
+    "category": "Cybersecurity & Ethics",
+    "tier": 1,
+    "hours": 10
+  },
+  {
+    "id": "swe-101",
+    "title": "Agile & Scrum Basics",
+    "description": "Learn the principles of Agile development and the Scrum framework for effective team collaboration.",
+    "link": "https://www.coursera.org/learn/agile-software-development",
+    "xp": 100,
+    "category": "Software Engineering",
+    "tier": 1,
+    "hours": 4
+  },
+  {
+    "id": "tcs-101",
+    "title": "Algorithms & Data Structures",
+    "description": "A deep dive into fundamental algorithms and data structures, the backbone of efficient software.",
+    "link": "https://www.coursera.org/specializations/data-structures-algorithms",
+    "xp": 300,
+    "category": "Theoretical Computer Science",
+    "tier": 3,
+    "hours": 20
+  },
+  {
+    "id": "media-101",
+    "title": "Intro to Unity for Game Dev",
+    "description": "Build your first 2D and 3D games using the Unity engine.",
+    "link": "https://learn.unity.com/",
+    "xp": 200,
+    "category": "Interactive Media & Specialized Apps",
+    "tier": 2,
+    "hours": 18
+  }
+]
+
