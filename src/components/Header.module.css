@@ -4,6 +4,17 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  position: relative;
+  z-index: 100;
+  background-color: var(--surface);
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255, 170, 247, 0.1);
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .title {
@@ -12,11 +23,6 @@
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
-}
-
-.subtitle {
-  color: var(--on-surface-variant);
-  margin: 4px 0 0;
 }
 
 .statsContainer {

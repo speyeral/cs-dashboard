@@ -21,7 +21,6 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>Supplemental CS Dashboard</h1>
-        <p className={styles.subtitle}>Your journey through the world of computer science.</p>
       </div>
       <div className={styles.statsContainer}>
         <div className={styles.level}>
