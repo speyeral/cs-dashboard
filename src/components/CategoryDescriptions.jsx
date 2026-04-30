@@ -4,31 +4,31 @@ import styles from './CategoryDescriptions.module.css';
 const categories = [
   {
     title: 'Web & Mobile Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.',
+    description: 'Master the art of creating beautiful, responsive websites and applications. Start with HTML and CSS fundamentals, learning semantic markup and modern layout techniques like Flexbox and CSS Grid. Progress to JavaScript to add interactivity and dynamic functionality to your web projects. This category covers the core technologies that power the modern web, from frontend frameworks to responsive design principles. Perfect for anyone looking to build user-facing applications and web experiences.',
   },
   {
     title: 'Intelligence & Data',
-    description: 'Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.',
+    description: 'Explore the rapidly evolving field of machine learning and data science. Learn how to process vast datasets, identify patterns, and build predictive models that drive intelligent systems. From supervised and unsupervised learning to feature engineering and model evaluation, this category introduces the algorithms and techniques reshaping how we extract insights from data. Ideal for those interested in AI, data analysis, and building systems that learn from experience.',
   },
   {
     title: 'Systems & Infrastructure',
-    description: 'Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.',
+    description: 'Understand the foundations that keep computing systems running. Dive deep into operating systems, covering processes, memory management, scheduling, and resource allocation. Learn how kernels manage hardware, how virtualization works, and the principles behind efficient system design. This category is essential for anyone building robust, scalable systems or pursuing careers in DevOps, system administration, or infrastructure engineering.',
   },
   {
     title: 'Cybersecurity & Ethics',
-    description: 'Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.',
+    description: 'Protect systems and data in an increasingly connected world. Learn about common threats, vulnerabilities, and defense mechanisms that keep organizations secure. From encryption and firewalls to authentication and ethical hacking, this category covers both defensive strategies and the security principles you need to know. Essential for any developer or IT professional concerned with building secure applications and protecting sensitive information.',
   },
   {
     title: 'Software Engineering',
-    description: 'Maecenas vitae orci vitae tellus feugiat eleifend. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget, malesuada at, neque.',
+    description: 'Learn industry-standard practices for building software collaboratively at scale. Master Agile methodologies, Scrum frameworks, and team coordination strategies used by top tech companies worldwide. Understand sprint planning, user stories, continuous integration, and the principles of iterative development. This category bridges the gap between coding skills and professional software development, preparing you for real-world team environments.',
   },
   {
     title: 'Theoretical Computer Science',
-    description: 'Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+    description: 'Build a strong foundation in the algorithms and data structures that power efficient software. Learn complexity analysis, common algorithms like sorting and searching, and fundamental data structures including arrays, linked lists, trees, and graphs. Understand Big O notation and how to design optimal solutions to computational problems. This category is crucial for technical interviews, competitive programming, and writing performant code.',
   },
   {
     title: 'Interactive Media & Specialized Apps',
-    description: 'Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit agna, endrerit sit amet, tincidunt ac, viverra sed, nulla.',
+    description: 'Bring your creative vision to life with game development and interactive applications. Using industry-standard tools like Unity, learn 2D and 3D game design, physics simulation, animation, and interactive storytelling. Build everything from simple 2D games to immersive 3D experiences. This category appeals to creative technologists and developers interested in entertainment, simulations, and innovative interactive experiences.',
   },
 ];
 

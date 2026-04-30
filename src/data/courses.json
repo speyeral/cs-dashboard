@@ -7,7 +7,59 @@
     "xp": 100,
     "category": "Web & Mobile Development",
     "tier": 1,
-    "hours": 5
+    "hours": 5,
+    "quiz": [
+      {
+        "question": "Which of the following is a semantic HTML5 element?",
+        "options": ["<div>", "<span>", "<article>", "<font>"],
+        "correct": 2
+      },
+      {
+        "question": "What does the CSS property 'display: flex' do?",
+        "options": ["Hides the element", "Creates a flexible container for layout", "Sets text to bold", "Changes font size"],
+        "correct": 1
+      },
+      {
+        "question": "Which HTML tag is used for the main heading in a page?",
+        "options": ["<h6>", "<h1>", "<h3>", "<header>"],
+        "correct": 1
+      },
+      {
+        "question": "What is the difference between padding and margin?",
+        "options": ["No difference", "Padding is outside, margin is inside", "Margin is outside, padding is inside", "Padding is for text, margin is for containers"],
+        "correct": 2
+      },
+      {
+        "question": "Which CSS layout model is best for creating complex two-dimensional layouts?",
+        "options": ["Flexbox", "Float", "Grid", "Position"],
+        "correct": 2
+      },
+      {
+        "question": "What does 'responsive design' mean?",
+        "options": ["Fast website performance", "Design that adapts to different screen sizes", "Interactive design", "Using CSS animations"],
+        "correct": 1
+      },
+      {
+        "question": "Which meta tag ensures proper scaling on mobile devices?",
+        "options": ["<meta name='viewport'>", "<meta name='mobile'>", "<meta name='responsive'>", "<meta name='device'>"],
+        "correct": 0
+      },
+      {
+        "question": "What is the CSS box model composed of?",
+        "options": ["Content only", "Content, padding, border, margin", "Width and height", "Display and position"],
+        "correct": 1
+      },
+      {
+        "question": "Which HTML element defines the footer of a document?",
+        "options": ["<bottom>", "<end>", "<footer>", "<closing>"],
+        "correct": 2
+      },
+      {
+        "question": "What does CSS 'z-index' control?",
+        "options": ["Font size", "The stacking order of elements", "Color transparency", "Text alignment"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "web-102",
@@ -17,7 +69,59 @@
     "xp": 150,
     "category": "Web & Mobile Development",
     "tier": 1,
-    "hours": 8
+    "hours": 8,
+    "quiz": [
+      {
+        "question": "What keyword is used to declare a variable in modern JavaScript?",
+        "options": ["var", "variable", "let or const", "declare"],
+        "correct": 2
+      },
+      {
+        "question": "Which of the following is a JavaScript data type?",
+        "options": ["String", "Number", "Boolean", "All of the above"],
+        "correct": 3
+      },
+      {
+        "question": "What method adds an event listener to an element?",
+        "options": ["onEvent()", "addEventListener()", "bindEvent()", "attachEvent()"],
+        "correct": 1
+      },
+      {
+        "question": "What does the DOM stand for?",
+        "options": ["Document Object Model", "Data Object Module", "Dynamic Output Manager", "Document Output Method"],
+        "correct": 0
+      },
+      {
+        "question": "How do you select an element by its ID in JavaScript?",
+        "options": ["getElementById()", "selectById()", "findId()", "queryId()"],
+        "correct": 0
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": ["A loop ending", "A function that has access to variables from its outer scope", "A type of variable", "An error handling mechanism"],
+        "correct": 1
+      },
+      {
+        "question": "Which operator is used for strict equality in JavaScript?",
+        "options": ["==", "===", "=", "!="],
+        "correct": 1
+      },
+      {
+        "question": "What does 'this' refer to in a method?",
+        "options": ["The window object", "The object the method belongs to", "The global scope", "Undefined"],
+        "correct": 1
+      },
+      {
+        "question": "Which method converts a JSON string into a JavaScript object?",
+        "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.objectify()"],
+        "correct": 1
+      },
+      {
+        "question": "What is a promise in JavaScript?",
+        "options": ["A variable declaration", "An object representing the eventual completion of an async operation", "A function definition", "A loop construct"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "ai-101",
@@ -27,7 +131,59 @@
     "xp": 200,
     "category": "Intelligence & Data",
     "tier": 2,
-    "hours": 12
+    "hours": 12,
+    "quiz": [
+      {
+        "question": "What is supervised learning?",
+        "options": ["Learning without labels", "Learning with labeled training data", "Learning from a teacher", "Learning algorithms"],
+        "correct": 1
+      },
+      {
+        "question": "Which of the following is an example of unsupervised learning?",
+        "options": ["Classification", "Regression", "Clustering", "Prediction"],
+        "correct": 2
+      },
+      {
+        "question": "What is the purpose of training data in machine learning?",
+        "options": ["To test the model", "To train the model on patterns", "To validate the model", "To normalize features"],
+        "correct": 1
+      },
+      {
+        "question": "What does 'overfitting' mean?",
+        "options": ["Model fits training data too well but performs poorly on new data", "Model doesn't fit training data", "Model is too simple", "Model has too few features"],
+        "correct": 0
+      },
+      {
+        "question": "Which algorithm is commonly used for binary classification?",
+        "options": ["K-Means", "Logistic Regression", "K-Nearest Neighbors", "Both B and C"],
+        "correct": 3
+      },
+      {
+        "question": "What is a feature in machine learning?",
+        "options": ["The output of the model", "An input variable used for prediction", "The algorithm type", "The training process"],
+        "correct": 1
+      },
+      {
+        "question": "What does cross-validation do?",
+        "options": ["Trains the model multiple times", "Tests model performance on different subsets of data", "Validates the data quality", "Normalizes features"],
+        "correct": 1
+      },
+      {
+        "question": "What is the difference between classification and regression?",
+        "options": ["No difference", "Classification predicts categories, regression predicts continuous values", "Regression is more accurate", "Classification uses supervised learning only"],
+        "correct": 1
+      },
+      {
+        "question": "Which metric is commonly used to evaluate classification models?",
+        "options": ["Mean Squared Error", "Accuracy", "Both A and B", "Precision"],
+        "correct": 2
+      },
+      {
+        "question": "What is the purpose of feature scaling in machine learning?",
+        "options": ["To reduce data size", "To normalize features to a similar range", "To remove outliers", "To increase model accuracy"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "sys-101",
@@ -37,7 +193,59 @@
     "xp": 250,
     "category": "Systems & Infrastructure",
     "tier": 2,
-    "hours": 15
+    "hours": 15,
+    "quiz": [
+      {
+        "question": "What is a process in an operating system?",
+        "options": ["A program stored on disk", "An instance of a program running in memory", "A CPU instruction", "A file on the system"],
+        "correct": 1
+      },
+      {
+        "question": "What is the role of a scheduler in an OS?",
+        "options": ["To manage memory", "To allocate CPU time to processes", "To handle I/O operations", "To manage file systems"],
+        "correct": 1
+      },
+      {
+        "question": "What does virtual memory do?",
+        "options": ["Creates fake RAM", "Extends physical memory using disk space", "Increases CPU speed", "Improves graphics performance"],
+        "correct": 1
+      },
+      {
+        "question": "What is a thread?",
+        "options": ["A CPU core", "A lightweight process within a process", "A memory location", "A system call"],
+        "correct": 1
+      },
+      {
+        "question": "What is context switching?",
+        "options": ["Changing the context of a message", "Switching between processes on CPU", "Moving data between cache and RAM", "Switching operating systems"],
+        "correct": 1
+      },
+      {
+        "question": "What is a semaphore used for in OS?",
+        "options": ["Resource allocation", "Synchronization and mutual exclusion", "CPU scheduling", "Memory protection"],
+        "correct": 1
+      },
+      {
+        "question": "What is deadlock in operating systems?",
+        "options": ["System crash", "Situation where processes are stuck waiting for resources", "Memory leak", "CPU overload"],
+        "correct": 1
+      },
+      {
+        "question": "How does paging improve memory management?",
+        "options": ["It reduces page size", "Divides memory into fixed-size pages for flexible allocation", "Eliminates virtual memory", "Increases RAM capacity"],
+        "correct": 1
+      },
+      {
+        "question": "What is an interrupt in OS?",
+        "options": ["An error condition", "A signal that pauses CPU execution for event handling", "A memory operation", "A file operation"],
+        "correct": 1
+      },
+      {
+        "question": "What does the kernel do in an operating system?",
+        "options": ["Manages user applications only", "Provides core OS services and manages hardware", "Controls user interface", "Manages network connections only"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "sec-101",
@@ -47,7 +255,59 @@
     "xp": 150,
     "category": "Cybersecurity & Ethics",
     "tier": 1,
-    "hours": 10
+    "hours": 10,
+    "quiz": [
+      {
+        "question": "What is a phishing attack?",
+        "options": ["Hacking a fishing company", "Social engineering attack using fake emails", "Stealing passwords directly", "DDoS attack"],
+        "correct": 1
+      },
+      {
+        "question": "What does encryption do?",
+        "options": ["Compresses data", "Converts data into unreadable format using a key", "Deletes data", "Backs up data"],
+        "correct": 1
+      },
+      {
+        "question": "What is a firewall?",
+        "options": ["A physical wall in data centers", "Software/hardware that filters network traffic", "An encryption tool", "A backup system"],
+        "correct": 1
+      },
+      {
+        "question": "What is multi-factor authentication (MFA)?",
+        "options": ["Using multiple passwords", "Requiring multiple forms of verification for login", "Using multiple servers", "Multiple encryption keys"],
+        "correct": 1
+      },
+      {
+        "question": "What is a malware?",
+        "options": ["Bad software manufacturer", "Malicious software designed to harm systems", "A type of data", "An encryption algorithm"],
+        "correct": 1
+      },
+      {
+        "question": "What does a VPN (Virtual Private Network) do?",
+        "options": ["Increases internet speed", "Creates encrypted connection and hides IP address", "Removes ads", "Blocks malware"],
+        "correct": 1
+      },
+      {
+        "question": "What is a zero-day vulnerability?",
+        "options": ["A vulnerability found on day 0", "An unknown software vulnerability exploited before patch", "A daily security check", "A type of firewall"],
+        "correct": 1
+      },
+      {
+        "question": "What is social engineering in cybersecurity?",
+        "options": ["Engineering social media apps", "Manipulating people to disclose confidential information", "Networking technology", "Online sociology"],
+        "correct": 1
+      },
+      {
+        "question": "What is the purpose of a security audit?",
+        "options": ["To find bugs in code", "To assess security posture and identify vulnerabilities", "To test internet speed", "To manage databases"],
+        "correct": 1
+      },
+      {
+        "question": "What should be in a strong password?",
+        "options": ["Just letters", "Mix of uppercase, lowercase, numbers, and special characters", "Just numbers", "Your name and date"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "swe-101",
@@ -57,7 +317,59 @@
     "xp": 100,
     "category": "Software Engineering",
     "tier": 1,
-    "hours": 4
+    "hours": 4,
+    "quiz": [
+      {
+        "question": "What is the Agile Manifesto's first value?",
+        "options": ["Process over individuals", "Individuals and interactions over processes and tools", "Documentation over working software", "Plans over change"],
+        "correct": 1
+      },
+      {
+        "question": "What is a sprint in Scrum?",
+        "options": ["A fast run", "A fixed time period for delivering incremental work", "A team meeting", "A project phase"],
+        "correct": 1
+      },
+      {
+        "question": "What is the role of a Product Owner in Scrum?",
+        "options": ["Managing developers", "Owning the product vision and managing backlog", "Testing software", "Deploying releases"],
+        "correct": 1
+      },
+      {
+        "question": "What is a daily standup in Scrum?",
+        "options": ["Physical exercise session", "Short daily meeting to sync team progress", "Code review meeting", "Project planning session"],
+        "correct": 1
+      },
+      {
+        "question": "What does 'velocity' mean in Scrum?",
+        "options": ["The speed of computers", "Amount of work completed in a sprint", "Team members' running speed", "Code execution speed"],
+        "correct": 1
+      },
+      {
+        "question": "What is a user story in Agile?",
+        "options": ["A narrative story about users", "A description of a feature from end-user perspective", "A fictional tale", "Documentation"],
+        "correct": 1
+      },
+      {
+        "question": "What is the purpose of a sprint review?",
+        "options": ["To critique team members", "To demonstrate completed work to stakeholders", "To plan next sprint", "To fix bugs"],
+        "correct": 1
+      },
+      {
+        "question": "What is backlog refinement?",
+        "options": ["Cleaning the office", "Improving clarity and estimation of user stories", "Removing old code", "Testing features"],
+        "correct": 1
+      },
+      {
+        "question": "What does 'Definition of Done' mean?",
+        "options": ["End of the project", "Criteria that must be met for work to be considered complete", "Daily completion", "Monthly milestone"],
+        "correct": 1
+      },
+      {
+        "question": "What is continuous improvement in Agile?",
+        "options": ["Never stopping work", "Regularly reflecting and improving processes and practices", "Always working overtime", "Constant meetings"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "tcs-101",
@@ -67,7 +379,59 @@
     "xp": 300,
     "category": "Theoretical Computer Science",
     "tier": 3,
-    "hours": 20
+    "hours": 20,
+    "quiz": [
+      {
+        "question": "What is the time complexity of binary search?",
+        "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+        "correct": 1
+      },
+      {
+        "question": "Which data structure uses LIFO (Last-In-First-Out)?",
+        "options": ["Queue", "Stack", "Array", "Tree"],
+        "correct": 1
+      },
+      {
+        "question": "What is a hash table primarily used for?",
+        "options": ["Sorting data", "Fast key-value lookups", "Storing sequential data", "Organizing hierarchical data"],
+        "correct": 1
+      },
+      {
+        "question": "What is the time complexity of quicksort in the average case?",
+        "options": ["O(n)", "O(n²)", "O(n log n)", "O(log n)"],
+        "correct": 2
+      },
+      {
+        "question": "What is a balanced binary search tree?",
+        "options": ["A tree with equal branches", "A tree where height difference between subtrees is minimal", "A tree with binary values", "A tree with equal nodes"],
+        "correct": 1
+      },
+      {
+        "question": "What is dynamic programming used for?",
+        "options": ["Writing dynamic code", "Solving problems by breaking them into overlapping subproblems", "Changing program logic", "Real-time processing"],
+        "correct": 1
+      },
+      {
+        "question": "What is a greedy algorithm?",
+        "options": ["An algorithm that's slow", "An algorithm that makes locally optimal choices at each step", "An algorithm using brute force", "An algorithm with loops"],
+        "correct": 1
+      },
+      {
+        "question": "Which data structure is best for implementing a priority queue?",
+        "options": ["Linked list", "Array", "Heap", "Stack"],
+        "correct": 2
+      },
+      {
+        "question": "What is Big O notation used for?",
+        "options": ["Measuring code quality", "Describing algorithm time/space complexity", "Ranking developers", "Measuring code lines"],
+        "correct": 1
+      },
+      {
+        "question": "What is graph traversal used for?",
+        "options": ["Drawing graphs", "Visiting all nodes in a graph systematically", "Organizing data", "Compressing data"],
+        "correct": 1
+      }
+    ]
   },
   {
     "id": "media-101",
@@ -77,7 +441,59 @@
     "xp": 200,
     "category": "Interactive Media & Specialized Apps",
     "tier": 2,
-    "hours": 18
+    "hours": 18,
+    "quiz": [
+      {
+        "question": "What is a GameObject in Unity?",
+        "options": ["A game object class", "The basic building block of scenes in Unity", "A player object", "A physics object"],
+        "correct": 1
+      },
+      {
+        "question": "What is a component in Unity?",
+        "options": ["A part of the scene", "A reusable piece of functionality attached to GameObjects", "A UI element", "A prefab"],
+        "correct": 1
+      },
+      {
+        "question": "What is a prefab in Unity?",
+        "options": ["A preferred object", "A reusable asset template for creating multiple instances", "A preview object", "A prototype design"],
+        "correct": 1
+      },
+      {
+        "question": "What does the Update() function in Unity do?",
+        "options": ["Updates the game version", "Runs once per frame to handle per-frame updates", "Updates assets", "Initializes the game"],
+        "correct": 1
+      },
+      {
+        "question": "What is a rigidbody in Unity?",
+        "options": ["A static object", "A component that adds physics simulation to objects", "A 3D model", "An animation component"],
+        "correct": 1
+      },
+      {
+        "question": "What is a collider in game development?",
+        "options": ["When objects crash", "A component that defines physical collision boundaries", "A graphics tool", "A camera component"],
+        "correct": 1
+      },
+      {
+        "question": "What is the purpose of the Start() function in Unity?",
+        "options": ["To start the game", "To initialize objects before the first frame", "To start a scene", "To begin physics calculations"],
+        "correct": 1
+      },
+      {
+        "question": "What is an animation controller in Unity?",
+        "options": ["A player input handler", "A state machine that manages animations", "A video player", "A graphics card"],
+        "correct": 1
+      },
+      {
+        "question": "What is the difference between 2D and 3D in Unity?",
+        "options": ["Speed difference", "Coordinate systems and rendering methods differ", "Only graphics differ", "Physics only differs"],
+        "correct": 1
+      },
+      {
+        "question": "What is instantiation in Unity?",
+        "options": ["Instant loading", "Creating a new instance of a prefab or object at runtime", "Quick initialization", "Immediate execution"],
+        "correct": 1
+      }
+    ]
   }
 ]
 

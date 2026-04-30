@@ -1,0 +1,181 @@
+import React, { useState, useEffect } from 'react';
+import { useProgress } from '../context/ProgressContext';
+import styles from './CourseQuiz.module.css';
+
+const CourseQuiz = ({ course, onComplete, onClose }) => {
+  const { completeCourse } = useProgress();
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [answered, setAnswered] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [quizComplete, setQuizComplete] = useState(false);
+  const [xpEarned, setXpEarned] = useState(0);
+
+  const quiz = course.quiz || [];
+  const totalQuestions = quiz.length;
+  const progressPercentage = ((currentQuestion + 1) / totalQuestions) * 100;
+
+  const handleAnswerClick = (index) => {
+    if (answered) return;
+
+    setSelectedAnswer(index);
+    const isCorrect = index === quiz[currentQuestion].correct;
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    setAnswered(true);
+  };
+
+  const handleNextQuestion = () => {
+    if (currentQuestion < totalQuestions - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+      setAnswered(false);
+      setSelectedAnswer(null);
+    } else {
+      // Quiz complete
+      const finalScore = selectedAnswer === quiz[currentQuestion].correct ? score + 1 : score;
+      const xpReward = Math.round((finalScore / totalQuestions) * course.xp);
+      setXpEarned(xpReward);
+      setScore(finalScore);
+      setQuizComplete(true);
+    }
+  };
+
+  const handleClaimXP = () => {
+    // Only award XP if score >= 70% (7/10 correct)
+    if (score >= 7) {
+      completeCourse(course.id);
+      onComplete();
+      onClose();
+    }
+  };
+
+  if (!quiz || quiz.length === 0) {
+    return (
+      <div className={styles.container}>
+        <p>No quiz available for this course.</p>
+      </div>
+    );
+  }
+
+  if (quizComplete) {
+    const percentage = Math.round((score / totalQuestions) * 100);
+    const passed = score >= 7;
+    const xpReward = Math.round((score / totalQuestions) * course.xp);
+
+    return (
+      <div className={styles.container}>
+        <div className={styles.resultCard}>
+          <div className={`${styles.resultHeader} ${passed ? styles.passed : styles.failed}`}>
+            <h2>{passed ? '🎉 Congratulations!' : '📚 Keep Learning'}</h2>
+            <p>{passed ? 'You passed the quiz!' : 'Try again to pass the quiz'}</p>
+          </div>
+
+          <div className={styles.scoreSection}>
+            <div className={styles.scoreCircle}>
+              <div className={styles.scoreNumber}>{percentage}%</div>
+              <div className={styles.scoreLabel}>Score</div>
+            </div>
+
+            <div className={styles.scoreDetails}>
+              <div className={styles.scoreRow}>
+                <span>Questions Correct:</span>
+                <strong>{score}/{totalQuestions}</strong>
+              </div>
+              <div className={styles.scoreRow}>
+                <span>Pass Required:</span>
+                <strong>70% (7/10)</strong>
+              </div>
+              <div className={styles.scoreRow}>
+                <span>XP Earned:</span>
+                <strong className={styles.xpValue}>{passed ? xpReward : 0} / {course.xp}</strong>
+              </div>
+            </div>
+          </div>
+
+          {passed && (
+            <button className={styles.claimButton} onClick={handleClaimXP}>
+              Claim {xpReward} XP & Complete Course
+            </button>
+          )}
+
+          {!passed && (
+            <button className={styles.retryButton} onClick={onClose}>
+              Try Again
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  const question = quiz[currentQuestion];
+  const isAnswered = answered;
+  const isLastQuestion = currentQuestion === totalQuestions - 1;
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h3>{course.title}</h3>
+        <span className={styles.questionCounter}>
+          Question {currentQuestion + 1} of {totalQuestions}
+        </span>
+      </div>
+
+      <div className={styles.progressBarContainer}>
+        <div className={styles.progressBar} style={{ width: `${progressPercentage}%` }}></div>
+      </div>
+
+      <div className={styles.questionCard}>
+        <h4 className={styles.question}>{question.question}</h4>
+
+        <div className={styles.optionsContainer}>
+          {question.options.map((option, index) => {
+            const isCorrectOption = index === question.correct;
+            const isSelectedOption = index === selectedAnswer;
+
+            let optionClass = styles.option;
+            if (isAnswered) {
+              if (isCorrectOption) {
+                optionClass += ` ${styles.correct}`;
+              } else if (isSelectedOption && !isCorrectOption) {
+                optionClass += ` ${styles.incorrect}`;
+              } else if (!isSelectedOption) {
+                optionClass += ` ${styles.disabled}`;
+              }
+            } else if (isSelectedOption) {
+              optionClass += ` ${styles.selected}`;
+            }
+
+            return (
+              <button
+                key={index}
+                className={optionClass}
+                onClick={() => handleAnswerClick(index)}
+                disabled={isAnswered}
+              >
+                <span className={styles.optionLabel}>{String.fromCharCode(65 + index)}.</span>
+                <span className={styles.optionText}>{option}</span>
+                {isAnswered && isCorrectOption && <span className={styles.checkmark}>✓</span>}
+                {isAnswered && isSelectedOption && !isCorrectOption && (
+                  <span className={styles.cross}>✗</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {isAnswered && (
+          <button
+            className={styles.nextButton}
+            onClick={handleNextQuestion}
+          >
+            {isLastQuestion ? 'Finish Quiz' : 'Next Question'}
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CourseQuiz;
