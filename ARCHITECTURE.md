@@ -15,14 +15,14 @@
 
 ## Project Overview
 
-**CS Dashboard** is a React-based web application designed to help students navigate computer science learning pathways. It functions as a supplemental learning dashboard that tracks course progress, manages learning paths across different CS specializations, and gamifies the learning experience with XP/leveling mechanics.
+**CS Dashboard** is a React-based web application designed to help students navigate computer science learning pathways. It features a landing page to introduce the learning paths and a main dashboard to explore courses. It functions as a supplemental learning tool that tracks course progress, manages learning paths across different CS specializations, and gamifies the experience with an XP/leveling system.
 
 **Core Features:**
 
-- Course discovery organized by category
+- A landing page with an overview of learning paths and recommended roadmaps.
+- A main application view for course discovery, organized by category.
 - Progress tracking with XP and leveling system
-- Multiple learning roadmaps for different CS specializations
-- Interactive course modals with course completion mechanics
+- Interactive course modals with quizzes to test knowledge and complete courses.
 - Persistent progress storage using browser local storage
 - Visual feedback with confetti animations on course completion
 
