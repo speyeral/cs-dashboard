@@ -63,63 +63,84 @@
   },
   {
     "id": "web-102",
-    "title": "JavaScript for Beginners",
-    "description": "An introduction to the JavaScript language, covering variables, data types, functions, and the DOM.",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+    "title": "Introduction to Front-End Development",
+    "description": "Designed by Meta, this course covers how the internet works and the fundamentals of styling web pages with HTML5 and CSS3. Includes an intro to UI frameworks like Bootstrap.",
+    "link": "https://www.coursera.org/learn/introduction-to-front-end-development",
     "xp": 150,
     "category": "Web & Mobile Development",
     "tier": 1,
-    "hours": 8,
+    "hours": 15,
     "quiz": [
       {
-        "question": "What keyword is used to declare a variable in modern JavaScript?",
-        "options": ["var", "variable", "let or const", "declare"],
+        "question": "Which protocol is used to transfer data over the web?",
+        "options": ["FTP", "HTTP", "SMTP", "SSH"],
+        "correct": 1
+      },
+      {
+        "question": "In the CSS Box Model, what sits between the padding and the margin?",
+        "options": ["Content", "Z-index", "Border", "Outline"],
         "correct": 2
       },
       {
-        "question": "Which of the following is a JavaScript data type?",
-        "options": ["String", "Number", "Boolean", "All of the above"],
-        "correct": 3
+        "question": "What is the primary purpose of a 'Reset' CSS file?",
+        "options": ["To clear user data", "To ensure consistent styling across different browsers", "To speed up page loading", "To delete the cache"],
+        "correct": 1
+      }
+    ]
+  },
+
+  {
+    "id": "web-201",
+    "title": "CS50's Web Programming",
+    "description": "A deep dive into the design and implementation of web apps. Covers database design, scalability, security, and user experience using Django and React.",
+    "link": "https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript",
+    "xp": 300,
+    "category": "Web & Mobile Development",
+    "tier": 2,
+    "hours": 60,
+    "quiz": [
+      {
+        "question": "In Django, which file is primarily responsible for mapping URLs to functions?",
+        "options": ["models.py", "views.py", "urls.py", "settings.py"],
+        "correct": 2
       },
       {
-        "question": "What method adds an event listener to an element?",
-        "options": ["onEvent()", "addEventListener()", "bindEvent()", "attachEvent()"],
+        "question": "What does a 'Migration' do in a web framework like Django?",
+        "options": ["Moves the site to a new server", "Propagates changes you make to your models into your database schema", "Compiles JavaScript into Python", "Optimizes images for mobile"],
         "correct": 1
       },
       {
-        "question": "What does the DOM stand for?",
-        "options": ["Document Object Model", "Data Object Module", "Dynamic Output Manager", "Document Output Method"],
-        "correct": 0
-      },
+        "question": "Which React hook is used to handle side effects like data fetching?",
+        "options": ["useState", "useContext", "useEffect", "useReducer"],
+        "correct": 2
+      }
+    ]
+  },
+
+  {
+    "id": "web-301",
+    "title": "Full Stack Open: Deep Dive into Modern Web Dev",
+    "description": "An intensive course focusing on React, Redux, Node.js, MongoDB, GraphQL, and TypeScript. Includes production-level concerns like CI/CD and Docker.",
+    "link": "https://fullstackopen.com/en/",
+    "xp": 500,
+    "category": "Web & Mobile Development",
+    "tier": 3,
+    "hours": 120,
+    "quiz": [
       {
-        "question": "How do you select an element by its ID in JavaScript?",
-        "options": ["getElementById()", "selectById()", "findId()", "queryId()"],
-        "correct": 0
-      },
-      {
-        "question": "What is a closure in JavaScript?",
-        "options": ["A loop ending", "A function that has access to variables from its outer scope", "A type of variable", "An error handling mechanism"],
+        "question": "What is the main benefit of using Redux in a large React application?",
+        "options": ["Faster rendering", "Centralized state management", "Automatic SEO optimization", "Easier CSS styling"],
         "correct": 1
       },
       {
-        "question": "Which operator is used for strict equality in JavaScript?",
-        "options": ["==", "===", "=", "!="],
-        "correct": 1
+        "question": "In the MERN stack, what is the role of 'Mongoose'?",
+        "options": ["A frontend framework", "A web server", "An Object Data Modeling (ODM) library for MongoDB", "A testing suite"],
+        "correct": 2
       },
       {
-        "question": "What does 'this' refer to in a method?",
-        "options": ["The window object", "The object the method belongs to", "The global scope", "Undefined"],
-        "correct": 1
-      },
-      {
-        "question": "Which method converts a JSON string into a JavaScript object?",
-        "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.objectify()"],
-        "correct": 1
-      },
-      {
-        "question": "What is a promise in JavaScript?",
-        "options": ["A variable declaration", "An object representing the eventual completion of an async operation", "A function definition", "A loop construct"],
-        "correct": 1
+        "question": "Which of these is a key principle of RESTful APIs?",
+        "options": ["Stateful communication", "Strict use of XML only", "Statelessness", "Direct hardware access"],
+        "correct": 2
       }
     ]
   },
@@ -186,7 +207,7 @@
     ]
   },
   {
-    "id": "sys-101",
+    "id": "data-101",
     "title": "Operating Systems Concepts",
     "description": "Understand the core concepts of operating systems, from processes to memory management.",
     "link": "https://www.udacity.com/course/introduction-to-operating-systems--ud923",
@@ -247,64 +268,247 @@
       }
     ]
   },
+
   {
-    "id": "sec-101",
-    "title": "Cybersecurity Fundamentals",
-    "description": "An introduction to the world of cybersecurity, covering common threats and defense mechanisms.",
-    "link": "https://www.cybrary.it/course/introduction-to-it-and-cybersecurity/",
+    "id": "data-102",
+    "title": "Google Data Analytics Fundamentals",
+    "description": "Gain an immersive understanding of the practices and processes used by a junior or associate data analyst in their day-to-day job.",
+    "link": "https://www.coursera.org/professional-certificates/google-data-analytics",
     "xp": 150,
-    "category": "Cybersecurity & Ethics",
+    "category": "Intelligence & Data",
     "tier": 1,
-    "hours": 10,
+    "hours": 20,
     "quiz": [
       {
-        "question": "What is a phishing attack?",
-        "options": ["Hacking a fishing company", "Social engineering attack using fake emails", "Stealing passwords directly", "DDoS attack"],
+        "question": "Which of the following is the correct order of the data analysis process according to Google?",
+        "options": ["Ask, Prepare, Process, Analyze, Share, Act", "Plan, Code, Test, Deploy", "Search, Find, Clean, Report", "Input, Output, Storage, Processing"],
+        "correct": 0
+      },
+      {
+        "question": "In SQL, which clause is used to filter the results of a query to include only specific rows?",
+        "options": ["SELECT", "FROM", "WHERE", "ORDER BY"],
+        "correct": 2
+      },
+      {
+        "question": "What is 'Data Cleaning'?",
+        "options": ["Deleting all data from a database", "The process of fixing or removing incorrect, corrupted, or incomplete data", "Moving data to a cloud server", "Summarizing data in a chart"],
+        "correct": 1
+      }
+    ]
+  },
+
+  {
+    "id": "data-201",
+    "title": "Supervised Machine Learning: Regression and Classification",
+    "description": "Learn the fundamentals of machine learning from the most famous course in the field. Covers gradient descent, cost functions, and regularization.",
+    "link": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "xp": 350,
+    "category": "Intelligence & Data",
+    "tier": 2,
+    "hours": 40,
+    "quiz": [
+      {
+        "question": "What is the primary goal of Gradient Descent in Machine Learning?",
+        "options": ["To increase the learning rate", "To minimize the cost function", "To visualize the data", "To split data into training and test sets"],
         "correct": 1
       },
       {
-        "question": "What does encryption do?",
-        "options": ["Compresses data", "Converts data into unreadable format using a key", "Deletes data", "Backs up data"],
+        "question": "Which technique is used to prevent 'Overfitting' by penalizing large weights?",
+        "options": ["Regularization (L1/L2)", "Backpropagation", "Feature Scaling", "One-hot Encoding"],
+        "correct": 0
+      },
+      {
+        "question": "In a Binary Classification problem, which activation function is typically used in the output layer?",
+        "options": ["ReLU", "Linear", "Sigmoid", "Tanh"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "data-301",
+    "title": "Neural Networks and Deep Learning",
+    "description": "Master the theoretical foundations of Deep Learning. Build, train, and apply fully connected deep neural networks using Python and TensorFlow/PyTorch.",
+    "link": "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+    "xp": 600,
+    "category": "Intelligence & Data",
+    "tier": 3,
+    "hours": 80,
+    "quiz": [
+      {
+        "question": "Why is the ReLU activation function often preferred over Sigmoid in hidden layers?",
+        "options": ["It is more mathematically complex", "It helps mitigate the vanishing gradient problem", "It always outputs a value between 0 and 1", "It requires more computational power"],
         "correct": 1
       },
       {
-        "question": "What is a firewall?",
-        "options": ["A physical wall in data centers", "Software/hardware that filters network traffic", "An encryption tool", "A backup system"],
+        "question": "What does 'Backpropagation' calculate?",
+        "options": ["The final accuracy of the model", "The gradient of the loss function with respect to the weights", "The speed of the CPU", "The number of hidden layers needed"],
         "correct": 1
       },
       {
-        "question": "What is multi-factor authentication (MFA)?",
-        "options": ["Using multiple passwords", "Requiring multiple forms of verification for login", "Using multiple servers", "Multiple encryption keys"],
+        "question": "In a CNN, what is the purpose of a 'Pooling' layer?",
+        "options": ["To increase the number of parameters", "To reduce the spatial dimensions (width/height) of the data", "To add non-linearity", "To normalize the input data"],
+        "correct": 1
+      }
+    ]
+  }, 
+  {
+    "id": "sys-101",
+    "title": "Operating Systems and You: Becoming a Power User",
+    "description": "Learn about the main components of an operating system and how to perform critical tasks like managing software and users, and configuring hardware.",
+    "link": "https://www.coursera.org/learn/os-power-user",
+    "xp": 100,
+    "category": "Systems & Infrastructure",
+    "tier": 1,
+    "hours": 15,
+    "quiz": [
+      {
+        "question": "What is the core part of an operating system that talks directly to the hardware?",
+        "options": ["The Shell", "The Kernel", "The GUI", "The File System"],
         "correct": 1
       },
       {
-        "question": "What is a malware?",
-        "options": ["Bad software manufacturer", "Malicious software designed to harm systems", "A type of data", "An encryption algorithm"],
+        "question": "In Linux, which command is used to change the permissions of a file?",
+        "options": ["ls", "cd", "chmod", "mkdir"],
+        "correct": 2
+      },
+      {
+        "question": "What is the purpose of Virtual Memory?",
+        "options": ["To make the CPU faster", "To allow the OS to use more memory than is physically available in RAM", "To store permanent files", "To speed up internet connection"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "sys-201",
+    "title": "Linux System Administration Fundamentals",
+    "description": "A deep dive into the Linux environment used by enterprise servers and supercomputers. Covers system architecture, disk management, and CLI proficiency.",
+    "link": "https://www.edx.org/course/introduction-to-linux",
+    "xp": 250,
+    "category": "Systems & Infrastructure",
+    "tier": 2,
+    "hours": 40,
+    "quiz": [
+      {
+        "question": "Which of the following describes a 'Process' in a systems context?",
+        "options": ["A hardware component", "An instance of a program being executed", "A type of network cable", "A storage device"],
         "correct": 1
       },
       {
-        "question": "What does a VPN (Virtual Private Network) do?",
-        "options": ["Increases internet speed", "Creates encrypted connection and hides IP address", "Removes ads", "Blocks malware"],
+        "question": "What is the PID of the 'init' or 'systemd' process, which is the first process started during booting?",
+        "options": ["0", "1", "100", "999"],
         "correct": 1
       },
       {
-        "question": "What is a zero-day vulnerability?",
-        "options": ["A vulnerability found on day 0", "An unknown software vulnerability exploited before patch", "A daily security check", "A type of firewall"],
+        "question": "In the context of the Bash shell, what does 'piping' (|) do?",
+        "options": ["Deletes a file", "Sends the output of one command as input to another", "Restarts the computer", "Encrypts a folder"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "sys-301",
+    "title": "Advanced Operating Systems & Concurrency",
+    "description": "Explore the abstractions, mechanisms, and implementations of modern OS. Covers multi-threading, synchronization, and resource scheduling algorithms.",
+    "link": "https://www.udacity.com/course/introduction-to-operating-systems--ud923",
+    "xp": 500,
+    "category": "Systems & Infrastructure",
+    "tier": 3,
+    "hours": 80,
+    "quiz": [
+      {
+        "question": "What is a 'Deadlock' in operating systems?",
+        "options": ["A computer that won't turn on", "A situation where two or more processes are blocked forever, waiting for each other", "A fast way to clear cache", "A secure login method"],
         "correct": 1
       },
       {
-        "question": "What is social engineering in cybersecurity?",
-        "options": ["Engineering social media apps", "Manipulating people to disclose confidential information", "Networking technology", "Online sociology"],
+        "question": "Which scheduling algorithm is designed to give every process an equal share of the CPU in time slices?",
+        "options": ["First-Come, First-Served", "Shortest Job Next", "Round Robin", "Priority Scheduling"],
+        "correct": 2
+      },
+      {
+        "question": "What is a 'Context Switch'?",
+        "options": ["Changing the desktop wallpaper", "The process of storing and restoring the state of a CPU so that execution can be resumed from the same point", "Switching from Wi-Fi to Ethernet", "Reinstalling the OS"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "sec-101",
+    "title": "Foundations of Cybersecurity",
+    "description": "An entry-level introduction to the world of cybersecurity. Learn how to identify common threats like phishing and malware, and understand the core principles of Confidentiality, Integrity, and Availability (CIA Triad).",
+    "link": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+    "xp": 100,
+    "category": "Cybersecurity & Ethics",
+    "tier": 1,
+    "hours": 20,
+    "quiz": [
+      {
+        "question": "Which principle of the CIA Triad ensures that information is not altered by unauthorized users?",
+        "options": ["Confidentiality", "Integrity", "Availability", "Authentication"],
         "correct": 1
       },
       {
-        "question": "What is the purpose of a security audit?",
-        "options": ["To find bugs in code", "To assess security posture and identify vulnerabilities", "To test internet speed", "To manage databases"],
+        "question": "What is 'Social Engineering' in a security context?",
+        "options": ["Writing complex code", "Manipulating people into giving up confidential information", "Setting up a firewall", "Scaling a database"],
         "correct": 1
       },
       {
-        "question": "What should be in a strong password?",
-        "options": ["Just letters", "Mix of uppercase, lowercase, numbers, and special characters", "Just numbers", "Your name and date"],
+        "question": "Which tool is commonly used by analysts to monitor and analyze security events in real-time?",
+        "options": ["IDE", "SIEM", "GUI", "API"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "sec-201",
+    "title": "Network Security and Access Controls",
+    "description": "A globally recognized credential focusing on the technical and administrative controls used to secure networks. Covers the OSI model, encryption basics, and risk management processes.",
+    "link": "https://www.isc2.org/certifications/cc",
+    "xp": 300,
+    "category": "Cybersecurity & Ethics",
+    "tier": 2,
+    "hours": 40,
+    "quiz": [
+      {
+        "question": "What is the 'Principle of Least Privilege'?",
+        "options": ["Giving everyone admin access", "Providing only the minimum level of access necessary to perform a job", "Disabling all passwords", "Encrypting only the most important files"],
+        "correct": 1
+      },
+      {
+        "question": "Which layer of the OSI model is responsible for routing data packets across different networks?",
+        "options": ["Data Link Layer", "Physical Layer", "Network Layer", "Application Layer"],
+        "correct": 2
+      },
+      {
+        "question": "What is a 'Honey Pot' in cybersecurity?",
+        "options": ["A high-speed server", "A decoy system used to lure and study attackers", "A type of firewall", "A password manager"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "sec-301",
+    "title": "Ethical Hacking & Penetration Testing",
+    "description": "Move beyond theory into hands-on offensive security. Learn to think like a hacker to find vulnerabilities in web apps and networks before malicious actors do.",
+    "link": "https://tryhackme.com/path/outline/jrpentester",
+    "xp": 600,
+    "category": "Cybersecurity & Ethics",
+    "tier": 3,
+    "hours": 80,
+    "quiz": [
+      {
+        "question": "What is the first phase of a penetration test?",
+        "options": ["Exploitation", "Privilege Escalation", "Reconnaissance (Information Gathering)", "Reporting"],
+        "correct": 2
+      },
+      {
+        "question": "Which tool is standard for network scanning and service discovery?",
+        "options": ["Nmap", "Visual Studio Code", "Docker", "Excel"],
+        "correct": 0
+      },
+      {
+        "question": "What is a 'Reverse Shell'?",
+        "options": ["A decorative terminal theme", "A shell connection initiated from the target machine back to the attacker", "A way to restart a server", "An encrypted backup"],
         "correct": 1
       }
     ]
@@ -372,6 +576,60 @@
     ]
   },
   {
+    "id": "swe-201",
+    "title": "Software Design and Architecture",
+    "description": "Move beyond basic scripts. Learn how to design modular, scalable systems using UML, design patterns, and solid architectural principles like Microservices.",
+    "link": "https://www.coursera.org/specializations/software-design-architecture",
+    "xp": 300,
+    "category": "Software Engineering",
+    "tier": 2,
+    "hours": 45,
+    "quiz": [
+      {
+        "question": "What does the 'S' in SOLID principles stand for?",
+        "options": ["Systematic Coding", "Single Responsibility Principle", "Secure Design", "Scalability"],
+        "correct": 1
+      },
+      {
+        "question": "Which design pattern is used to ensure a class has only one instance and provides a global point of access to it?",
+        "options": ["Factory Pattern", "Observer Pattern", "Singleton Pattern", "Decorator Pattern"],
+        "correct": 2
+      },
+      {
+        "question": "What is the main advantage of a Microservices architecture compared to a Monolith?",
+        "options": ["It is simpler to build initially", "It allows services to be scaled and deployed independently", "It uses less memory", "It doesn't require a database"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "swe-301",
+    "title": "DevOps, CI/CD, and Software Lifecycle",
+    "description": "Master the modern delivery pipeline. Learn how to automate testing and deployment using tools like Jenkins, GitHub Actions, and Docker to ship code faster and more reliably.",
+    "link": "https://www.edx.org/professional-certificate/introduction-to-devops-software-engineering",
+    "xp": 550,
+    "category": "Software Engineering",
+    "tier": 3,
+    "hours": 70,
+    "quiz": [
+      {
+        "question": "What is the goal of Continuous Integration (CI)?",
+        "options": ["To write code as fast as possible", "To automatically merge and test code changes frequently", "To prevent users from seeing new updates", "To manually review every line of code every month"],
+        "correct": 1
+      },
+      {
+        "question": "In a CI/CD pipeline, what is 'Automated Testing'?",
+        "options": ["Having robots click on the screen", "Running scripts to verify code functionality every time a change is pushed", "Asking users to report bugs", "Deleting code that doesn't work"],
+        "correct": 1
+      },
+      {
+        "question": "What is 'Technical Debt'?",
+        "options": ["Money owed to a software vendor", "The implied cost of future reworking caused by choosing an easy but limited solution now", "The cost of buying new computers", "A loan taken out by a tech startup"],
+        "correct": 1
+      }
+    ]
+  },
+  {
     "id": "tcs-101",
     "title": "Algorithms & Data Structures",
     "description": "A deep dive into fundamental algorithms and data structures, the backbone of efficient software.",
@@ -434,63 +692,165 @@
     ]
   },
   {
-    "id": "media-101",
-    "title": "Intro to Unity for Game Dev",
-    "description": "Build your first 2D and 3D games using the Unity engine.",
-    "link": "https://learn.unity.com/",
+    "id": "tcs-102",
+    "title": "Computational Thinking and Fundamentals",
+    "description": "Harvard's legendary intro to CS. Learn how to think algorithmically and solve problems efficiently using low-level memory management and basic data structures.",
+    "link": "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x",
     "xp": 200,
-    "category": "Interactive Media & Specialized Apps",
-    "tier": 2,
-    "hours": 18,
+    "category": "Theoretical Computer Science",
+    "tier": 1,
+    "hours": 40,
     "quiz": [
       {
-        "question": "What is a GameObject in Unity?",
-        "options": ["A game object class", "The basic building block of scenes in Unity", "A player object", "A physics object"],
+        "question": "What does 'Big O Notation' measure?",
+        "options": ["The size of a file in bytes", "The upper bound of the time or space complexity of an algorithm", "The number of lines of code", "The speed of the CPU"],
         "correct": 1
       },
       {
-        "question": "What is a component in Unity?",
-        "options": ["A part of the scene", "A reusable piece of functionality attached to GameObjects", "A UI element", "A prefab"],
+        "question": "Which of the following is the time complexity of a 'Binary Search'?",
+        "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+        "correct": 2
+      },
+      {
+        "question": "In a Linked List, what is stored in a 'Node' besides the data?",
+        "options": ["A backup of the data", "A pointer/reference to the next node", "The total size of the list", "The current date and time"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "tcs-201",
+    "title": "Algorithmic Toolbox & Data Structures",
+    "description": "A deep dive into essential algorithms. Covers sorting, searching, greedy algorithms, and dynamic programming techniques used in technical interviews.",
+    "link": "https://www.coursera.org/specializations/data-structures-algorithms",
+    "xp": 400,
+    "category": "Theoretical Computer Science",
+    "tier": 2,
+    "hours": 60,
+    "quiz": [
+      {
+        "question": "What is the main advantage of a Hash Table?",
+        "options": ["It sorts data automatically", "It provides O(1) average time complexity for lookups", "It uses the least amount of memory", "It is easier to implement than an array"],
         "correct": 1
       },
       {
-        "question": "What is a prefab in Unity?",
-        "options": ["A preferred object", "A reusable asset template for creating multiple instances", "A preview object", "A prototype design"],
+        "question": "Which algorithmic strategy involves breaking a problem into smaller sub-problems and storing the results to avoid redundant work?",
+        "options": ["Greedy Search", "Brute Force", "Dynamic Programming", "Recursion without memoization"],
+        "correct": 2
+      },
+      {
+        "question": "In a Binary Search Tree (BST), what is true about the left child of a node?",
+        "options": ["It is always larger than the parent", "It is always equal to the parent", "It is always smaller than the parent", "It is always a leaf node"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "id": "tcs-301",
+    "title": "Advanced Analysis of Algorithms",
+    "description": "A rigorous mathematical approach to algorithm analysis. Covers generating functions, analytic combinatorics, and the study of intractable problems (P vs NP).",
+    "link": "https://www.coursera.org/learn/analysis-of-algorithms",
+    "xp": 600,
+    "category": "Theoretical Computer Science",
+    "tier": 3,
+    "hours": 100,
+    "quiz": [
+      {
+        "question": "What does it mean if a problem is 'NP-Complete'?",
+        "options": ["It can be solved in polynomial time", "No efficient solution is known, but a solution can be verified quickly", "It is impossible for a computer to solve", "It only applies to sorting algorithms"],
         "correct": 1
       },
       {
-        "question": "What does the Update() function in Unity do?",
-        "options": ["Updates the game version", "Runs once per frame to handle per-frame updates", "Updates assets", "Initializes the game"],
+        "question": "Which master theorem case applies to an algorithm that splits a problem into two halves and takes O(n) time to merge them (like Merge Sort)?",
+        "options": ["T(n) = 2T(n/2) + O(n)", "T(n) = T(n-1) + O(1)", "T(n) = 4T(n/2) + O(n^2)", "T(n) = O(log n)"],
+        "correct": 0
+      },
+      {
+        "question": "In the context of algorithm analysis, what is 'Amortized Analysis'?",
+        "options": ["Analyzing the worst-case of a single operation", "Analyzing the average performance of an operation over a sequence of operations", "Analyzing only the first step of an algorithm", "Calculating the cost of the hardware"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "id": "media-101",
+    "title": "Introduction to Game Development with Unity",
+    "description": "Start your journey in game dev. Learn how to navigate the Unity Editor, understand the Game Object/Component model, and write your first scripts to control player movement.",
+    "link": "https://learn.unity.com/pathway/unity-essentials",
+    "xp": 100,
+    "category": "Interactive Media & Specialized Apps",
+    "tier": 1,
+    "hours": 10,
+    "quiz": [
+      {
+        "question": "In Unity, what is the base class for all entities in a scene?",
+        "options": ["Component", "GameObject", "Prefab", "Transform"],
         "correct": 1
       },
       {
-        "question": "What is a rigidbody in Unity?",
-        "options": ["A static object", "A component that adds physics simulation to objects", "A 3D model", "An animation component"],
+        "question": "Which C# function is called once per frame in a Unity script?",
+        "options": ["Start()", "Awake()", "Update()", "FixedUpdate()"],
+        "correct": 2
+      },
+      {
+        "question": "What does a 'Rigidbody' component allow a GameObject to do?",
+        "options": ["Display a 3D model", "Play audio", "Interact with the physics engine (gravity, collisions)", "Store save data"],
+        "correct": 2
+      }
+    ]
+  },
+
+  {
+    "id": "media-201",
+    "title": "Intermediate Game Programming & Design",
+    "description": "Deepen your coding skills. Learn how to handle complex game states, implement animations, and create responsive user interfaces for 2D games.",
+    "link": "https://www.coursera.org/specializations/programming-unity-game-development",
+    "xp": 300,
+    "category": "Interactive Media & Specialized Apps",
+    "tier": 2,
+    "hours": 40,
+    "quiz": [
+      {
+        "question": "What is a 'Prefab' in Unity?",
+        "options": ["A finished game", "A reusable template of a GameObject and its components", "A type of code error", "A special lighting effect"],
         "correct": 1
       },
       {
-        "question": "What is a collider in game development?",
-        "options": ["When objects crash", "A component that defines physical collision boundaries", "A graphics tool", "A camera component"],
+        "question": "In 2D game development, what is a 'Sprite'?",
+        "options": ["A 3D mesh", "A 2D graphic object", "A background sound", "A script that handles networking"],
         "correct": 1
       },
       {
-        "question": "What is the purpose of the Start() function in Unity?",
-        "options": ["To start the game", "To initialize objects before the first frame", "To start a scene", "To begin physics calculations"],
+        "question": "Which window in Unity is used to create and edit transitions between different character animations?",
+        "options": ["The Inspector", "The Animator Controller", "The Scene View", "The Project Window"],
+        "correct": 1
+      }
+    ]
+  },
+
+  {
+    "id": "media-301",
+    "title": "3D Interaction & Virtual Reality Development",
+    "description": "Master the world of 3D and VR. This course covers spatial interaction, 3D math for game devs (vectors/quaternions), and optimizing high-fidelity graphics for immersive apps.",
+    "link": "https://www.coursera.org/learn/vr-app-development-unity",
+    "xp": 500,
+    "category": "Interactive Media & Specialized Apps",
+    "tier": 3,
+    "hours": 60,
+    "quiz": [
+      {
+        "question": "In 3D math, what is a 'Quaternion' primarily used for?",
+        "options": ["Calculating color values", "Handling 3D rotations without 'gimbal lock'", "Measuring the distance between two points", "Storing text data"],
         "correct": 1
       },
       {
-        "question": "What is an animation controller in Unity?",
-        "options": ["A player input handler", "A state machine that manages animations", "A video player", "A graphics card"],
+        "question": "What is 'Draw Call Batching' in the context of game optimization?",
+        "options": ["Deleting unused code", "Combining multiple small meshes into a single mesh to reduce CPU overhead", "Increasing the resolution of textures", "Automating the testing process"],
         "correct": 1
       },
       {
-        "question": "What is the difference between 2D and 3D in Unity?",
-        "options": ["Speed difference", "Coordinate systems and rendering methods differ", "Only graphics differ", "Physics only differs"],
-        "correct": 1
-      },
-      {
-        "question": "What is instantiation in Unity?",
-        "options": ["Instant loading", "Creating a new instance of a prefab or object at runtime", "Quick initialization", "Immediate execution"],
+        "question": "In VR, what does '6DOF' (Six Degrees of Freedom) refer to?",
+        "options": ["A high frame rate", "The ability to track both rotation and position in 3D space", "Six different graphics settings", "A 6-button controller"],
         "correct": 1
       }
     ]

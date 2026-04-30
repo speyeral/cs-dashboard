@@ -1,5 +1,6 @@
+// This file is moved to src/components/course/CourseTile.jsx
 import React from 'react';
-import { useProgress } from '../context/ProgressContext';
+import { useProgress } from '../../context/ProgressContext';
 import styles from './CourseTile.module.css';
 
 const CourseTile = ({ course, onSelect }) => {

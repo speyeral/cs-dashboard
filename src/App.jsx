@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Confetti from 'react-confetti';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Dashboard from './components/Dashboard';
-import CourseModal from './components/CourseModal';
-import CategoryDescriptions from './components/CategoryDescriptions';
-import LandingHero from './components/LandingHero';
-import LandingSection2 from './components/LandingSection2';
-import LandingSection3 from './components/LandingSection3';
+import Header from './components/layout/Header';
+import Dashboard from './components/dashboard/Dashboard';
+import CourseModal from './components/course/CourseModal';
+import LandingHero from './components/landing/LandingHero';
+import LandingSection2 from './components/landing/LandingSection2';
+import LandingSection3 from './components/landing/LandingSection3';
+import CategoryDescriptions from './components/sections/CategoryDescriptions';
+import BrandingBackground from './components/common/BrandingBackground';
 import './App.css'
 
 function App() {
@@ -24,59 +24,58 @@ function App() {
   };
 
   const handleQuestComplete = () => {
-    setShowConfetti(true);
-    // Stop confetti after 5 seconds
-    setTimeout(() => setShowConfetti(false), 5000);
+    setSelectedCourse(null); // Close modal first
+    // Then show confetti after a delay for the modal's close animation
+    setTimeout(() => {
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 5000);
+    }, 300);
   };
 
   const goToCategories = () => {
     setCurrentView('categories');
-    window.scrollTo(0, 0);
-  };
-
-  const goToHome = () => {
-    setCurrentView('landing');
+    // Scroll to the top of the page when navigating
     window.scrollTo(0, 0);
   };
 
   return (
-    <main className="container">
+    <div className="app-container">
       {showConfetti && <Confetti recycle={false} numberOfPieces={400} />}
-      <Navigation currentView={currentView} onNavigate={(view) => {
+      <Header currentView={currentView} onNavigate={(view) => {
         setCurrentView(view);
         window.scrollTo(0, 0);
       }} />
-      <Header />
-
-      {currentView === 'landing' && (
-        <>
-          <LandingHero />
-          <LandingSection2 onGoToCategories={goToCategories} />
-          <LandingSection3 />
-        </>
-      )}
-
-      {currentView === 'categories' && (
-        <div className="categoriesView">
-          <Dashboard onCourseSelect={handleCourseSelect} />
-          {selectedCourse && (
-            <CourseModal
-              course={selectedCourse}
-              onClose={handleCloseModal}
-              onComplete={handleQuestComplete}
-            />
-          )}
-          <CategoryDescriptions />
-          
-          {/* Go back to home button */}
-          <div className="goBackContainer">
-            <button className="goBackButton" onClick={goToHome}>
-              ← Back to Home
-            </button>
+      <main className="main-area">
+        {currentView === 'landing' && (
+          <div className="landing-wrapper">
+            <BrandingBackground />
+            <LandingHero />
+            <div className="content-wrapper">
+              <LandingSection2 onGoToCategories={goToCategories} />
+              <LandingSection3 />
+            </div>
           </div>
-        </div>
-      )}
-    </main>
+        )}
+
+        {currentView === 'categories' && (
+          <div className="categories-wrapper">
+            <BrandingBackground />
+            <div className="content-wrapper">
+              <h2 className="page-title">Course Catalog</h2>
+              <Dashboard id="course-dashboard" onCourseSelect={handleCourseSelect} />
+              <CategoryDescriptions />
+              {selectedCourse && (
+                <CourseModal
+                  course={selectedCourse}
+                  onClose={handleCloseModal}
+                  onComplete={handleQuestComplete}
+                />
+              )}
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
   )
 }
 

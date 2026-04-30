@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useProgress } from '../context/ProgressContext';
+// This file is moved to src/components/course/CourseQuiz.jsx
+import React, { useState } from 'react';
+import { useProgress } from '../../context/ProgressContext';
 import styles from './CourseQuiz.module.css';
+
+const PASS_PERCENTAGE = 70; // 70% to pass
 
 const CourseQuiz = ({ course, onComplete, onClose }) => {
   const { completeCourse } = useProgress();
@@ -9,11 +12,11 @@ const CourseQuiz = ({ course, onComplete, onClose }) => {
   const [answered, setAnswered] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [quizComplete, setQuizComplete] = useState(false);
-  const [xpEarned, setXpEarned] = useState(0);
 
   const quiz = course.quiz || [];
   const totalQuestions = quiz.length;
-  const progressPercentage = ((currentQuestion + 1) / totalQuestions) * 100;
+  const progressPercentage = totalQuestions > 0 ? ((currentQuestion + 1) / totalQuestions) * 100 : 0;
+  const passingScore = totalQuestions > 0 ? Math.ceil(totalQuestions * (PASS_PERCENTAGE / 100)) : 0;
 
   const handleAnswerClick = (index) => {
     if (answered) return;
@@ -32,22 +35,15 @@ const CourseQuiz = ({ course, onComplete, onClose }) => {
       setAnswered(false);
       setSelectedAnswer(null);
     } else {
-      // Quiz complete
-      const finalScore = selectedAnswer === quiz[currentQuestion].correct ? score + 1 : score;
-      const xpReward = Math.round((finalScore / totalQuestions) * course.xp);
-      setXpEarned(xpReward);
-      setScore(finalScore);
+      // Quiz is complete. The score is already up-to-date from the last handleAnswerClick call.
       setQuizComplete(true);
     }
   };
 
   const handleClaimXP = () => {
-    // Only award XP if score >= 70% (7/10 correct)
-    if (score >= 7) {
-      completeCourse(course.id);
-      onComplete();
-      onClose();
-    }
+    // The button to call this is only shown if the user passed, so no extra check is needed.
+    completeCourse(course.id);
+    onComplete();
   };
 
   if (!quiz || quiz.length === 0) {
@@ -59,9 +55,9 @@ const CourseQuiz = ({ course, onComplete, onClose }) => {
   }
 
   if (quizComplete) {
-    const percentage = Math.round((score / totalQuestions) * 100);
-    const passed = score >= 7;
-    const xpReward = Math.round((score / totalQuestions) * course.xp);
+    const percentage = totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0;
+    const passed = score >= passingScore;
+    const xpReward = passed ? Math.round((score / totalQuestions) * course.xp) : 0;
 
     return (
       <div className={styles.container}>
@@ -84,11 +80,11 @@ const CourseQuiz = ({ course, onComplete, onClose }) => {
               </div>
               <div className={styles.scoreRow}>
                 <span>Pass Required:</span>
-                <strong>70% (7/10)</strong>
+                <strong>{PASS_PERCENTAGE}% ({passingScore}/{totalQuestions})</strong>
               </div>
               <div className={styles.scoreRow}>
                 <span>XP Earned:</span>
-                <strong className={styles.xpValue}>{passed ? xpReward : 0} / {course.xp}</strong>
+                <strong className={styles.xpValue}>{xpReward} / {course.xp}</strong>
               </div>
             </div>
           </div>

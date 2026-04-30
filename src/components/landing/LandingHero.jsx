@@ -4,11 +4,6 @@ import styles from './LandingHero.module.css';
 const LandingHero = () => {
   return (
     <section className={`${styles.hero} landingSection`}>
-      {/* Decorative background elements */}
-      <div className={styles.bgOrb1}></div>
-      <div className={styles.bgOrb2}></div>
-      <div className={styles.gridBg}></div>
-
       <div className={styles.heroInner}>
         <div className={styles.heroPreTitle}>Your Learning Journey Starts Here</div>
         
@@ -32,9 +27,9 @@ const LandingHero = () => {
         </div>
       </div>
       
-      <div className={styles.scrollHint}>
-        <span>↓</span> Scroll to explore
-      </div>
+      {/* <div className={styles.scrollHint}> */}
+        {/* <span>↓</span> Scroll to explore */}
+      {/* </div> */}
 
       {/* Floating decoration elements */}
       <div className={styles.floatingCard1}>

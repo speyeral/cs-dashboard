@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background: var(--surface);
+  background: transparent;
   color: var(--on-surface);
   padding: 0;
   display: flex;

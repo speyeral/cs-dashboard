@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useProgress } from '../context/ProgressContext';
+// This file is moved to src/components/course/CourseModal.jsx
+import React, { useState } from 'react';
 import CourseQuiz from './CourseQuiz';
 import styles from './CourseModal.module.css';
 
@@ -12,6 +12,9 @@ const tierMap = {
 const CourseModal = ({ course, onClose, onComplete }) => {
   const [showQuiz, setShowQuiz] = useState(false);
 
+  // The useEffect and useProgress hooks were imported but not used,
+  // so they have been removed for cleanup.
+
   if (!course) return null;
 
   const handleStartQuiz = () => {
@@ -23,7 +26,7 @@ const CourseModal = ({ course, onClose, onComplete }) => {
   };
 
   const handleQuizComplete = () => {
-    onComplete();
+    onComplete(); // App.jsx now handles closing the modal and showing confetti
   };
 
   return (

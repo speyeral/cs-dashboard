@@ -1,96 +1,47 @@
-/* Enable full-page scroll snapping */
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.app-container {
+  position: relative; /* Needed for absolute positioning of branding */
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Landing page sections */
-.landingSection {
+.main-area {
+  /* This value needs to be adjusted based on the final header height */
+  /* Desktop: ~60px, Mobile: ~170px */
+  padding-top: 60px;
+  flex-grow: 1;
   width: 100%;
-  height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: sectionFadeIn 0.6s ease-out;
 }
 
-@keyframes sectionFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Categories view */
-.categoriesView {
+.landing-wrapper {
+  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 40px;
-  max-width: 1440px;
-  margin: 0 auto;
-  animation: fadeIn 0.4s ease-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.categories-wrapper {
+  position: relative;
+  width: 100%;
 }
 
-/* Go back to home button */
-.goBackContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.goBackButton {
-  background: linear-gradient(90deg, rgba(255, 170, 247, 0.2), rgba(233, 179, 255, 0.15));
-  border: 1px solid rgba(255, 170, 247, 0.3);
+.page-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  text-align: center;
+  margin: var(--spacing-lg) 0;
   color: var(--on-surface);
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Space Grotesk', sans-serif;
 }
 
-.goBackButton:hover {
-  background: linear-gradient(90deg, rgba(255, 170, 247, 0.3), rgba(233, 179, 255, 0.25));
-  border-color: rgba(255, 170, 247, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 170, 247, 0.15);
+.content-wrapper {
+  max-width: var(--spacing-container-max, 1280px);
+  margin: 0 auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
-  .categoriesView {
-    padding: 20px;
-    gap: 20px;
+  .main-area {
+    /* Title(29) + Stats(45) + Nav(31) + Gaps(16+16) + Padding(12*2) = ~161px */
+    padding-top: 170px;
   }
 }

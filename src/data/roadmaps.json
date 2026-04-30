@@ -1,0 +1,26 @@
+[
+  {
+    "program": "Computer Science",
+    "image": "/images/cs-roadmap.JPG",
+    "description": "A foundational path focusing on algorithms, data structures, and systems.",
+    "courses": ["Computational Thinking and Fundamentals", "Algorithms & Data Structures", "Operating Systems and You: Becoming a Power User", "Software Design and Architecture"]
+  },
+  {
+    "program": "Data Science",
+    "image": "/images/ds-roadmap.webp",
+    "description": "This path emphasizes machine learning, data analysis, and visualization.",
+    "courses": ["Google Data Analytics Fundamentals", "Introduction to Machine Learning", "Supervised Machine Learning: Regression and Classification", "Neural Networks and Deep Learning"]
+  },
+  {
+    "program": "Information Technology",
+    "image": "/images/it-roadmap.jpg",
+    "description": "A practical path focused on infrastructure, security, and network management.",
+    "courses": ["Operating Systems and You: Becoming a Power User", "Linux System Administration Fundamentals", "Foundations of Cybersecurity", "DevOps, CI/CD, and Software Lifecycle"]
+  },
+  {
+    "program": "Information Systems",
+    "image": "/images/is-roadmap.jpg",
+    "description": "A blend of technology and business, focusing on software engineering and systems analysis.",
+    "courses": ["Agile & Scrum Basics", "Introduction to Front-End Development", "Google Data Analytics Fundamentals", "Software Design and Architecture"]
+  }
+]

@@ -1,0 +1,62 @@
+/* 
+  This global CSS file centralizes the design tokens from your design.md.
+  Import this file once in your main application entry point (e.g., App.jsx or main.jsx).
+*/
+:root {
+  /* Colors from design.md */
+  --surface: #20092b;
+  --surface-container: #2d1638;
+  --surface-container-low: #291234;
+  --surface-container-high: #382043;
+  --surface-container-highest: #442b4f;
+  --on-surface: #f7d8ff;
+  --on-surface-variant: #d6c0d0;
+  --primary: #ffaaf7;
+  --on-primary: #5a005d;
+  --secondary: #e9b3ff;
+  --tertiary: #a8c8ff;
+  --error: #ffb4ab;
+  --outline: #9f8b9a;
+  --background: #20092b;
+
+  /* Typography from design.md */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-size-body-md: 16px;
+  --font-size-h2: 24px;
+  --font-size-h3: 32px;
+
+  /* Rounded corners */
+  --rounded-sm: 0.25rem;
+  --rounded-default: 0.5rem;
+  --rounded-md: 0.75rem;
+  --rounded-lg: 1rem;
+  --rounded-xl: 1.5rem;
+  --rounded-full: 9999px;
+
+  /* Spacing */
+  --spacing-base: 8px;
+  --spacing-xs: 4px;
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 64px;
+  --spacing-gutter: 16px;
+}
+
+/* --- Base Styles --- */
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-md);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}

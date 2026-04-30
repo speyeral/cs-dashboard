@@ -1,6 +1,7 @@
+// This file is moved to src/components/dashboard/Dashboard.jsx
 import React from 'react';
-import { useProgress } from '../context/ProgressContext';
-import CourseCategory from './CourseCategory';
+import { useProgress } from '../../context/ProgressContext';
+import CourseCategory from '../course/CourseCategory';
 import styles from './Dashboard.module.css';
 
 // Define the layout for different categories.
@@ -14,7 +15,7 @@ const categoryLayouts = {
   'Interactive Media & Specialized Apps': { colSpan: 6 },
 };
 
-const Dashboard = ({ onCourseSelect }) => {
+const Dashboard = ({ onCourseSelect, id }) => {
   const { courses } = useProgress();
 
   const groupedCourses = React.useMemo(() => {
@@ -29,7 +30,7 @@ const Dashboard = ({ onCourseSelect }) => {
   }, [courses]);
 
   return (
-    <div className={styles.dashboardGrid}>
+    <div id={id} className={styles.dashboardGrid}>
       {Object.entries(groupedCourses).map(([category, coursesInCategory]) => {
         // Default to 6 columns if not specified in the layout config
         const layout = categoryLayouts[category] || { colSpan: 6 };

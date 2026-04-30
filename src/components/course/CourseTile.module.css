@@ -1,0 +1,52 @@
+.tile {
+  background-color: var(--surface-container-high);
+  padding: var(--spacing-sm);
+  border-radius: var(--rounded-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--on-surface);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.xp {
+  font-size: 14px;
+  color: var(--tertiary);
+  font-weight: 600;
+}
+
+.checkmark {
+  color: var(--tertiary);
+  font-size: 20px;
+}
+
+.completed {
+  background-color: var(--surface-container-highest);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.completed:hover {
+  transform: none;
+  border-color: transparent;
+}

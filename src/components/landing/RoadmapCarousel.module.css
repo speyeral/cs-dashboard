@@ -1,6 +1,8 @@
 .carouselContainer {
-  background-color: var(--surface-container-low);
-  border: 1px solid var(--surface-container-high);
+  background: color-mix(in srgb, var(--surface-container-low) 70%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--outline-variant);
   border-radius: var(--rounded-lg);
   padding: 24px 40px;
   text-align: center;
